@@ -162,7 +162,7 @@ table > thead:first-child > tr:first-child > td {
     border-top: 0;
 }
 table > tbody + tbody {
-    b
+    <!-- b -->
 }
 table > tbody > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
@@ -903,9 +903,18 @@ span.soft {
 .orange{
     color: #ff720b;
 }
-.row {
-  margin: 0px;
+.orange-line{
+    width:50px;
+    height: 2pt;
+    background-color: #ff720b;
 }
+
+.centralized{
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
