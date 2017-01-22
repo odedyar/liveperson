@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    {% include head.html %}
+    <script>
+        $(document).ready(function () {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function (e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function (e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% if page.datatable == true %}
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('table.datatable').DataTable({
+            paging: false,
+            stateSave: true
+        }
+        );
+</script>
+{% endif %}
+
+</head>
+
+<body>
+    {% include topnav.html %}
+    <!-- Page Content -->
+    <div class="container-fluid">
+
+        <!-- Content Row -->
+        <div class="row banner">
+            <!-- Content Column -->
+            <div class="col-sm-6">
+                <div class="text">
+                    <div class="first-line">LivePerson for Developers.</div>
+                    <div class="second-line">Build on LiveEngage with our<br />powerful <span class="orange">digital toolbox</span></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <img src="images/briefcase-liveperson.png" class="briefcase" />
+            </div>
+            <!-- /.row -->
+        </div>
+
+        <!-- /.container -->
+    </div>
+    <div class="container">
+        <row>
+            <div class="col-sm-3">
+                <img src="images/channels-logo.png" />
+                <div class="title">Channels</div>
+                <div class="text">
+                    Create digital<br />
+                    connections from<br />
+                    email, social media,<br />
+                    or any messaging app
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/bots-logo.png" />
+                <div class="title">Bots</div>
+                <div class="text">
+                    Integrate chat bots<br /> into your messaging<br /> with seamless agent<br /> escalation.
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/agent-logo.png" />
+                <div class="title">Agent</div>
+                <div class="text">
+                    Enable agents to be<br />
+                    more effective with<br />
+                    AI & other tools.
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img src="images/rich-media-logo.png" />
+                <div class="title">Rich Media</div>
+                <div class="text">
+                    Transform text<br />
+                    conversations to<br />
+                    interactive - digital<br />
+                    video, voice, images<br />
+                    & more
+                </div>
+            </div>
+        </row>
+        <row>
+            <div class="col-sm-4">
+                <img src="images/channels-logo.png" />
+                <div class="title">Channels</div>
+                <div class="text">
+                    Create digital<br />
+                    connections from<br />
+                    email, social media,<br />
+                    or any messaging app
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/bots-logo.png" />
+                <div class="title">Bots</div>
+                <div class="text">
+                    Integrate chat bots<br /> into your messaging<br /> with seamless agent<br /> escalation.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/agent-logo.png" />
+                <div class="title">Agent</div>
+                <div class="text">
+                    Enable agents to be<br />
+                    more effective with<br />
+                    AI & other tools.
+                </div>
+            </div>
+        </row>
+    </div>
+
+</body>
+{% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+
+</html>
