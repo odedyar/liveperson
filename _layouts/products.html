@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<head>
+    {% include head.html %}
+    <script>
+        $(document).ready(function () {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function (e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function (e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+{% if page.datatable == true %}
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.5/js/jquery.dataTables.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('table.datatable').DataTable({
+            paging: false,
+            stateSave: true
+        }
+        );
+</script>
+{% endif %}
+
+</head>
+
+<body>
+    {% include topnav.html %}
+    <!-- Page Content -->
+   
+    <div class="centralized header"> LiveEngage Digital Communication Products.</div>
+    <div class="orange-line centralized"></div>
+    <div class="container products-first-line ">
+        <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+           
+            <div class="title">Channels</div>
+            <div class="text">
+                Create digital<br /> connections from<br /> email, social media,<br /> or any messaging app
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+           
+            <div class="title">Bots</div>
+            <div class="text">
+                Integrate chat bots<br /> into your messaging<br /> with seamless agent<br /> escalation.
+            </div>
+        </div>
+        <div class="clearfix visible-xs" ></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            
+            <div class="title">Agent</div>
+            <div class="text">
+                Enable agents to be<br /> more effective with<br /> AI & other tools.
+            </div>
+        </div>
+        <div class="clearfix visible-md " ></div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            
+            <div class="title">Rich Media</div>
+            <div class="text">
+                Transform text<br /> conversations to<br /> interactive - digital<br /> video, voice, images<br /> & more
+            </div>
+        </div>
+       
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            
+            <div class="title">Channels</div>
+            <div class="text">
+                Utilize the powerful<br /> real-time and<br /> overtime data for<br /> custom dashboards &<br /> analytics integrations.
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            
+            <div class="title">Bots</div>
+            <div class="text">
+                Embed LiveEngage<br /> into your contact<br /> center operations<br /> such as WFM<br /> integration.
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+            
+            <div class="title">Agent</div>
+            <div class="text">
+                Automate large scale<br /> operative tasks such<br /> as user set up, pre<br /> defined content <br /> update and
+                more.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+{% if site.google_analytics %} {% include google_analytics.html %} {% endif %}
+
+</html>

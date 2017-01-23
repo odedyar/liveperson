@@ -914,25 +914,58 @@ span.soft {
     clear: both;
     text-align: center;
 }
-
+/*home page */
 .home-first-line {
-  margin-top: 50px;
-  width: 900px;
+  width: 70%;  
+  margin: 50px auto !important;
 }
 .home-second-line {
-  margin-top: 54px;
-  width: 600px;
+  width: 55%;
+  margin: 54px auto !important;
 }
+html body div.container.home-first-line div.title{
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+/*end home page*/
+/*products */
+.products-first-line {
+  margin-top: 50px;
+  width: 90%;
+}
+.products-second-line {
+  margin-top: 54px;
+  width: 70%;
+}
+html body div.container.products-first-line div.title{
+
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+html body div.container.products-first-line div.text{
+    margin-bottom: 50px;
+}
+
+/*end products*/
 .header {
   font-family: "Roboto Slab",Arial,Helvetica,sans-serif;
   font-size: 1.2em;
   margin-top: 35px;
   margin-bottom: 15px;
 }
-html body div.container.home-first-line div.title{
-    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+
+
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.container {
+  
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 @media (max-width: 767px) {
@@ -945,6 +978,14 @@ html body div.container.home-first-line div.title{
     #mysidebar {
         position: relative;
     }
+    .home-first-line {     
+        margin:0px !important;
+    }
+    .home-second-line {
+        width: 70%;
+        margin: 0px !important;
+    }
+    
 }
 
 @media (min-width: 1000px) {
