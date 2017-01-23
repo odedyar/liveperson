@@ -928,6 +928,11 @@ html body div.container .home-first-line div.title{
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+html body div.container .home-second-line div.title{
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
 /*end home page*/
 /*products */
 .products-first-line {
