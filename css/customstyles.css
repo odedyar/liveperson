@@ -892,6 +892,7 @@ span.soft {
 }
 .banner .text .second-line{
     font-size:1.866em;
+    max-width: 400px;
 }
 
 .banner img{
@@ -932,6 +933,7 @@ html body div.container div.home-first-line div.text, html body div.container di
     font-family: "Open Sans",Arial, Helvetica, sans-serif;
     font-size: 0.8em;
     margin-bottom: 10px;
+    max-width: 90%;
 }
 
 /*end home page*/
@@ -956,10 +958,14 @@ html body div.container.products-first-line div.text{
 
 /*end products*/
 .header {
-  font-family: "Roboto Slab",Arial,Helvetica,sans-serif;
-  font-size: 1.2em;
-  margin-top: 35px;
-  margin-bottom: 15px;
+    font-family: "Roboto Slab",Arial,Helvetica,sans-serif;
+    font-size: 1.2em;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    max-width: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+  
 }
 
 
