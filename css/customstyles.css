@@ -923,16 +923,17 @@ span.soft {
   width: 55%;
   margin: 54px auto !important;
 }
-html body div.container .home-first-line div.title{
+html body div.container div div.title{
     font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-html body div.container .home-second-line div.title{
-    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
+html body div.container div.home-first-line div.text, html body div.container div.home-second-line div.text{
+    font-family: "Open Sans",Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
     margin-bottom: 10px;
 }
+
 /*end home page*/
 /*products */
 .products-first-line {
@@ -984,11 +985,12 @@ html body div.container.products-first-line div.text{
         position: relative;
     }
     .home-first-line {     
-        margin:0px !important;
+        margin-bottom:0px !important;
     }
     .home-second-line {
         width: 70%;
-        margin: 0px !important;
+         margin-bottom: 0px !important;
+         margin-top: 0px !important;
     }
     
 }
