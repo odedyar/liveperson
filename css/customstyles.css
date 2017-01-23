@@ -915,6 +915,26 @@ span.soft {
     text-align: center;
 }
 
+.home-first-line {
+  margin-top: 50px;
+  width: 900px;
+}
+.home-second-line {
+  margin-top: 54px;
+  width: 600px;
+}
+.header {
+  font-family: "Roboto Slab",Arial,Helvetica,sans-serif;
+  font-size: 1.2em;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+html body div.container.home-first-line div.title{
+    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
         color: #444;
