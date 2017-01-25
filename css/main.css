@@ -1,27 +1,4 @@
-/* banner home page */
-.banner{
-    width:100%;
-    height:250px;
-    background-color: #f8f8f8; 
-}
-.banner .text{
-    float: left;
-    font-family: "Roboto Slab",serif;
-    margin-left: 50px;
-    margin-top: 90px;
-}
-.banner .text .first-line{
-    font-size: 1.066em;
-}
-.banner .text .second-line{
-    font-size:1.866em;
-    max-width: 400px;
-}
 
-.banner img{
-    float:right;
-    margin-top: 90px;
-}
 
 /*colors */
 .orange{
@@ -38,56 +15,7 @@
     clear: both;
     text-align: center;
 }
-/*home page */
-.home-first-line {
-  width: 70%;  
-  margin: 50px auto !important;
-}
-.home-second-line {
-  width: 55%;
-  margin: 54px auto !important;
-}
-html body div.container div div.title{
-    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-html body div.container div.home-first-line div.text, html body div.container div.home-second-line div.text{
-    font-family: "Open Sans",Arial, Helvetica, sans-serif;
-    font-size: 0.8em;
-    margin-bottom: 10px;
-    max-width: 90%;
-}
-.header.homepage{
-   max-width: 400px;
-}
-/*end home page*/
-/*products */
 
-.products {
-  margin-top: 80px;
-  width: 90%;
-}
-
-html body div.container.products div.title{
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    border-bottom: #33c6f4 solid 2pt;
-    display: inline-block;
-    padding-bottom: 5px;
-}
-html body div.container.products div.text{
-    margin-bottom: 80px;
-    font-size: 0.866em;
-    color:#5879da;
-    font-family: "Open Sans",Arial, Helvetica, sans-serif;
-}
-html body div.container.products div.text a{
-    display: block;
-    margin-bottom: 15px;
-}
-
-/*end products*/
 .header {
     font-family: "Roboto Slab",Arial,Helvetica,sans-serif;
     font-size: 1.2em;
@@ -111,15 +39,3 @@ html body div.container.products div.text a{
   padding-right: 0px;
 }
 
-@media (max-width: 990px) {
-  
-    .home-first-line {     
-        margin-bottom:0px !important;
-    }
-    .home-second-line {
-        width: 70%;
-         margin-bottom: 0px !important;
-         margin-top: 0px !important;
-    }
-    
-}
